@@ -1,0 +1,12 @@
+[target.x86_64-pc-windows-gnu]
+linker = "D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\gcc.exe"
+ar = "D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\ar.exe"
+rustflags = [
+  "-C", "dlltool=D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\dlltool.exe",
+  "-C", "link-arg=-BC:\\Users\\fengyue11\\.rustup\\toolchains\\stable-x86_64-pc-windows-gnu\\lib\\rustlib\\x86_64-pc-windows-gnu\\bin\\self-contained\\",
+]
+
+[env]
+CC_x86_64_pc_windows_gnu = "D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\gcc.exe"
+CXX_x86_64_pc_windows_gnu = "D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\g++.exe"
+AR_x86_64_pc_windows_gnu = "D:\\workspace\\rust-demo\\mingw\\mingw64\\bin\\ar.exe"
